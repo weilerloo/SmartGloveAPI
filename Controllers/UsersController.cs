@@ -165,6 +165,9 @@ namespace LoginAPI.Controllers
                     case "employee":
                         roleID = (int)RoleDetails.Employee;
                         break;
+                    case null:
+                        roleID = (int)RoleDetails.Employee;
+                        break;
                 }
                 var userDetail = new UserDTO
                 {
